@@ -15,11 +15,11 @@ public class Segitiga14 {
         double sisiMiring = sc.nextDouble();
 
         double luas = 0.5 * alas * tinggi;
-        double keliling = alas + tinggi + sisiMiring;
+        double kelilingSegitiga = alas + tinggi + sisiMiring;
 
         System.out.println("\nHasil Perhitungan:");
         System.out.println("Luas segitiga     = " + luas + " cm²");
-        System.out.println("Keliling segitiga = " + keliling + " cm");
+        System.out.println("Keliling segitiga = " + kelilingSegitiga + " cm");
 
         sc.close();
     }
