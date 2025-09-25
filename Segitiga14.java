@@ -1,17 +1,20 @@
+import java.util.Scanner;
+
 public class Segitiga14 {
     public static void main(String[] args) {
-        int tinggi = 5; // Tinggi segitiga
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 1; i <= tinggi; i++) {
-            for (int j = tinggi; j > i; j--) {
-                System.out.print(" ");
-            }
+        System.out.println("=== Program Hitung Luas Segitiga ===");
+        System.out.print("Masukkan alas segitiga (cm): ");
+        double alas = sc.nextDouble();
 
-            for (int k = 1; k <= (2 * i - 1); k++) {
-                System.out.print("*");
-            }
+        System.out.print("Masukkan tinggi segitiga (cm): ");
+        double tinggi = sc.nextDouble();
 
-            System.out.println();
-        }
+        double luas = 0.5 * alas * tinggi;
+
+        System.out.println("Luas segitiga = " + luas + " cm²");
+
+        sc.close();
     }
 }
